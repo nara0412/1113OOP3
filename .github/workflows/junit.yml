@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Compile
-      run: javac -cp .:./src/junit-4.13.2.jar:./src/hamcrest-core-1.3.jar ./src/*.java
+      run: javac -cp .:./junit-4.13.2.jar:./src/hamcrest-core-1.3.jar ./src/*.java
 
     - name: Run Tests
-      run: java -cp .:./src/junit-4.13.2.jar:./src/hamcrest-core-1.3.jar org.junit.runner.JUnitCore TicTacToeTest
+      run: java -cp .:./junit-4.13.2.jar:./src/hamcrest-core-1.3.jar org.junit.runner.JUnitCore TicTacToeTest
